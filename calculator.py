@@ -1,6 +1,12 @@
-x = 1
-y = 2
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-z = x + y
+z = round(x + y)
 
-print(z)
+# use f string to format number output with comma
+print(f"{z:,}")
+
+z = x / y
+
+# fstring can be used to round digits
+print(f"{z:.2f}")
